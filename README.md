@@ -1,4 +1,4 @@
-# Hskich
+# Hskich - Local Host Scanner for Windows 10/11: Malware Detection & Logs
 
 <img width="1651" height="860" alt="Screenshot From 2026-09-28 20-58-51" src="https://github.com/user-attachments/assets/7bde713a-2df5-4d77-ae8e-1f55e1c20c37" />    
 
