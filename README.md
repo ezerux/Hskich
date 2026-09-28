@@ -1,5 +1,7 @@
 # Hskich - Local Host Scanner for Windows 10/11: Malware Detection & Logs
 
+#A lightweight utility designed for Windows 10/11 to scan local hosts, detect potential malware, analyze system logs, and generate comprehensive security and activity reports.
+
 <img width="1651" height="860" alt="Screenshot From 2026-09-28 20-58-37" src="https://github.com/user-attachments/assets/f5e89a8b-4d72-4505-add8-843f1acc1ae6" />
 
 <img width="1651" height="860" alt="Screenshot From 2026-09-28 20-57-24" src="https://github.com/user-attachments/assets/6c49c705-07fe-4fcf-8eab-deb098ed3503" />
