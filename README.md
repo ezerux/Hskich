@@ -1,10 +1,11 @@
-# Hskich - Local Host Scanner for Windows 10/11: Malware Detection & Logs
+# Zenith - Local Host Scanner for Windows 10/11: Malware Detection & Logs
 
 A lightweight utility designed for Windows 10/11 to scan local hosts, detect potential malware, analyze system logs, and generate comprehensive security and activity reports.
+<img width="400" height="400" alt="svgviewer-png-output (5)" src="https://github.com/user-attachments/assets/819b5676-1454-4460-b1d5-01757f070cac" />
 
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-05" src="https://github.com/user-attachments/assets/48b2b7f6-c034-4e53-814d-14d0d26bb763" />
 
-# Hskich — Windows Local Security Audit Dashboard
+# Zenith — Windows Local Security Audit Dashboard
 
 Hskich is a local security audit tool designed for Windows. It scans your system's security configuration, checks network ports, and provides you with a comprehensive report on your system's security status.
 
