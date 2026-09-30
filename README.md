@@ -5,17 +5,24 @@ A lightweight utility designed for Windows 10/11 to scan local hosts, detect pot
 
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-05" src="https://github.com/user-attachments/assets/48b2b7f6-c034-4e53-814d-14d0d26bb763" />
 ==============================================================================================================
+
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-35-51" src="https://github.com/user-attachments/assets/1c018251-491a-43fc-a56e-f41d1cca65cb" />
+==============================================================================================================
 
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-35-56" src="https://github.com/user-attachments/assets/6404e6c9-dc79-4937-9ce9-a97f9f3ab26e" />
+==============================================================================================================
 
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-35-58" src="https://github.com/user-attachments/assets/4cfe2021-bdae-43f1-be80-e0fa00a566dd" />
+==============================================================================================================
 
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-00" src="https://github.com/user-attachments/assets/64ee2b5f-7bb5-4838-9500-c25ca99a7334" />
+==============================================================================================================
 
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-01" src="https://github.com/user-attachments/assets/8d235e36-4fc5-4ecc-b551-fa8dcd2b7d16" />
+==============================================================================================================
 
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-03" src="https://github.com/user-attachments/assets/5836d9b6-fcc4-4a23-b1f5-498ab66a3a3e" />
+==============================================================================================================
 
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-14" src="https://github.com/user-attachments/assets/34f2c83b-b425-482a-bfa0-07346a8a6567" />
 
