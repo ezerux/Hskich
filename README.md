@@ -27,7 +27,7 @@ Zenith is a local security audit tool designed for Windows. It scans your system
 
 ### Option 1: Desktop App (One-Click)
 1. Double-click **`start_desktop.bat`**
-2. The app will automatically check dependencies and open the Hskich desktop window
+2. The app will automatically check dependencies and open the Zenith desktop window
 
 ### Option 2: Launcher
 1. Run **`start.bat`** or **`launcher.py`**
