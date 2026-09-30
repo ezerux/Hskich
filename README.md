@@ -1,4 +1,4 @@
- Zenith - Local Host Scanner for Windows 10/11: Malware Detection & Logs
+ #Zenith - Local Host Scanner for Windows 10/11: Malware Detection & Logs
 
 
 A lightweight utility designed for Windows 10/11 to scan local hosts, detect potential malware, analyze system logs, and generate comprehensive security and activity reports.
