@@ -17,3 +17,13 @@ A lightweight utility designed for Windows 10/11 to scan local hosts, detect pot
 
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-03" src="https://github.com/user-attachments/assets/5836d9b6-fcc4-4a23-b1f5-498ab66a3a3e" />
 
+<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-14" src="https://github.com/user-attachments/assets/34f2c83b-b425-482a-bfa0-07346a8a6567" />
+
+<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-25" src="https://github.com/user-attachments/assets/f51400db-3f70-484f-ab45-dba214def347" />
+
+<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-33" src="https://github.com/user-attachments/assets/2c98a23f-a81e-4202-84eb-6a11964f3bef" />
+
+
+
+
+
