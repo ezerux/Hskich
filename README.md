@@ -34,12 +34,6 @@ Hskich is a local security audit tool designed for Windows. It scans your system
 1. Double-click **`build_exe.bat`**
 2. The output will be created at `dist\Hskich\Hskich.exe` — a ready-to-use executable
 
-### Alternative: Command Line
-```powershell
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python app.py
 
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-05" src="https://github.com/user-attachments/assets/48b2b7f6-c034-4e53-814d-14d0d26bb763" />
 ===========================================================================================
