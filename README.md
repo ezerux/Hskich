@@ -3,6 +3,44 @@
 A lightweight utility designed for Windows 10/11 to scan local hosts, detect potential malware, analyze system logs, and generate comprehensive security and activity reports.
 
 
+# Hskich — Windows Local Security Audit Dashboard
+
+Hskich is a local security audit tool designed for Windows. It scans your system's security configuration, checks network ports, and provides you with a comprehensive report on your system's security status.
+
+## Key Features
+
+- **Network Scanning** — Scans open (listening) network ports and checks firewall status
+- **System Hardening Checks** — Verifies UAC, RDP, SMBv1, Windows Update status, Guest account, local admin list, and startup programs
+- **Windows Defender Integration** — Checks antivirus/real-time protection status, signature age, and allows quick scans
+- **ClamAV Integration** (Optional) — Second antivirus engine with database updates and on-demand scanning
+- **Real-time Monitoring** — CPU/RAM/Disk/Network usage with graphs, plus a task-manager-style process list with CPU%/RAM per process
+- **Report Generation** — Click "Generate report" to get a complete scan summary that you can print, save as PDF, or download as .txt
+- **Event Log Analysis** — Reads recent Event Log entries (System/Application errors, Security log failed logons, admin group changes, account lockouts)
+- **Prioritized Recommendations** — Every finding includes a priority level (critical/high/medium/low) and specific remediation suggestions
+- **Desktop Application** — Runs as a standalone desktop app without requiring a browser
+
+## Installation
+
+### Option 1: Desktop App (One-Click)
+1. Double-click **`start_desktop.bat`**
+2. The app will automatically check dependencies and open the Hskich desktop window
+
+### Option 2: Launcher
+1. Run **`start.bat`** or **`launcher.py`**
+2. Click **Run Desktop App** to open the application window
+3. (If you prefer browser mode, click **Browser**)
+
+### Option 3: Build .EXE File
+1. Double-click **`build_exe.bat`**
+2. The output will be created at `dist\Hskich\Hskich.exe` — a ready-to-use executable
+
+### Alternative: Command Line
+```powershell
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-05" src="https://github.com/user-attachments/assets/48b2b7f6-c034-4e53-814d-14d0d26bb763" />
 ===========================================================================================
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-35-51" src="https://github.com/user-attachments/assets/1c018251-491a-43fc-a56e-f41d1cca65cb" />
