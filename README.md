@@ -1,11 +1,15 @@
 # Zenith — Windows Local Security Audit Dashboard
 
 
-                 <img width="400" height="400" alt="svgviewer-png-output (7)" src="https://github.com/user-attachments/assets/154b4168-a2d0-4b0c-a742-d3e8fb68d1c6" />
+<img width="400" height="400" alt="svgviewer-png-output (7)" src="https://github.com/user-attachments/assets/154b4168-a2d0-4b0c-a742-d3e8fb68d1c6" />
 
 
 
 Zenith is a local security audit tool designed for Windows. It scans your system's security configuration, checks network ports, and provides you with a comprehensive report on your system's security status.
+
+<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-05" src="https://github.com/user-attachments/assets/53624cd5-a944-46e2-9834-9fae69d66fcb" />
+
+
 
 ## Key Features
 
