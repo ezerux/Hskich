@@ -2,6 +2,7 @@
 
 A lightweight utility designed for Windows 10/11 to scan local hosts, detect potential malware, analyze system logs, and generate comprehensive security and activity reports.
 
+<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-05" src="https://github.com/user-attachments/assets/48b2b7f6-c034-4e53-814d-14d0d26bb763" />
 
 # Hskich — Windows Local Security Audit Dashboard
 
@@ -35,7 +36,7 @@ Hskich is a local security audit tool designed for Windows. It scans your system
 2. The output will be created at `dist\Hskich\Hskich.exe` — a ready-to-use executable
 
 
-<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-05" src="https://github.com/user-attachments/assets/48b2b7f6-c034-4e53-814d-14d0d26bb763" />
+
 ===========================================================================================
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-35-51" src="https://github.com/user-attachments/assets/1c018251-491a-43fc-a56e-f41d1cca65cb" />
 ===========================================================================================
