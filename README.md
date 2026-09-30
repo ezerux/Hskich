@@ -37,7 +37,7 @@ Hskich is a local security audit tool designed for Windows. It scans your system
 
 
 
-=========================================================================================
+==========================================================================================
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-35-51" src="https://github.com/user-attachments/assets/1c018251-491a-43fc-a56e-f41d1cca65cb" />
 ===========================================================================================
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-35-56" src="https://github.com/user-attachments/assets/6404e6c9-dc79-4937-9ce9-a97f9f3ab26e" />
