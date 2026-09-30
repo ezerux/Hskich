@@ -1,7 +1,7 @@
 # Zenith — Windows Local Security Audit Dashboard
 
 
-<img width="400" height="400" alt="svgviewer-png-output (7)" src="https://github.com/user-attachments/assets/154b4168-a2d0-4b0c-a742-d3e8fb68d1c6" />
+                 <img width="400" height="400" alt="svgviewer-png-output (7)" src="https://github.com/user-attachments/assets/154b4168-a2d0-4b0c-a742-d3e8fb68d1c6" />
 
 
 
