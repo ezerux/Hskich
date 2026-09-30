@@ -1,4 +1,3 @@
-#<img width="50" height="50" alt="svgviewer-png-output (6)" src="https://github.com/user-attachments/assets/fdb76415-b63d-4d5b-bf8d-bd1bcb81ddc4" />
  Zenith - Local Host Scanner for Windows 10/11: Malware Detection & Logs
 
 
