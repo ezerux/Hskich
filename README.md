@@ -6,6 +6,7 @@ A lightweight utility designed for Windows 10/11 to scan local hosts, detect pot
 
 <img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-05" src="https://github.com/user-attachments/assets/48b2b7f6-c034-4e53-814d-14d0d26bb763" />
 
+<img width="50" height="50" alt="svgviewer-png-output (6)" src="https://github.com/user-attachments/assets/fdb76415-b63d-4d5b-bf8d-bd1bcb81ddc4" />
 # Zenith — Windows Local Security Audit Dashboard
 
 Hskich is a local security audit tool designed for Windows. It scans your system's security configuration, checks network ports, and provides you with a comprehensive report on your system's security status.
