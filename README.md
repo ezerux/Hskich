@@ -1,65 +1,137 @@
-# Zenith — Windows Local Security Audit Dashboard
+# Zenith Local
 
+> A self-hosted, offline Windows security dashboard — no cloud, no telemetry, everything runs on your machine.
 
-<img width="400" height="400" alt="svgviewer-png-output (7)" src="https://github.com/user-attachments/assets/154b4168-a2d0-4b0c-a742-d3e8fb68d1c6" />
+![Platform](https://img.shields.io/badge/platform-Windows-blue)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
 
+---
 
+## What it does
 
-Zenith is a local security audit tool designed for Windows. It scans your system's security configuration, checks network ports, and provides you with a comprehensive report on your system's security status.
+Zenith Local is a local web dashboard (runs on `localhost:5000`) that gives you a full security and health audit of your Windows machine — in one place, without sending any data anywhere.
 
-<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-05" src="https://github.com/user-attachments/assets/53624cd5-a944-46e2-9834-9fae69d66fcb" />
+| Section | What you get |
+|---|---|
+| **Overview** | Prioritized findings (Critical / High / Medium / Low / Info) across all scans |
+| **Network** | Open ports, active connections with hostname resolution, firewall rules, per-process I/O |
+| **Malware / AV** | ClamAV scan profiles (Quick / Standard / Full / Custom path), Windows Defender status, process hash check via MalwareBazaar |
+| **Registry** | Autorun entries (Run / RunOnce / Winlogon / AppInit_DLLs) — flags suspicious paths and living-off-the-land binaries |
+| **File Scanner** | Scan any folder for double-extension files, scripts in high-risk locations, executables in Temp/Downloads |
+| **Event Logs** | System / Application / Security logs with severity coloring, full detail panel per entry |
+| **Monitoring** | Live CPU / RAM / Disk / Network charts, swap, interface status, process table |
+| **Hardware** | Disk S.M.A.R.T. health, RAM modules, GPU info, disk stress test |
+| **Drivers** | All installed drivers with date, age, Hardware ID (copy button), vendor download link |
+| **System Info** | Full profile: CPU, GPU, RAM slots, motherboard, BIOS, OS, battery health % |
+| **File Watch** | Real-time folder monitoring — alerts on new/modified/deleted files |
+| **Reports** | Full scan report — print as PDF or download as `.txt` |
 
+---
 
+## Quick start
 
-## Key Features
+**Requirements:** Python 3.10+ from [python.org](https://www.python.org/downloads/) — check *"Add python.exe to PATH"* during install.
 
-- **Network Scanning** — Scans open (listening) network ports and checks firewall status
-- **System Hardening Checks** — Verifies UAC, RDP, SMBv1, Windows Update status, Guest account, local admin list, and startup programs
-- **Windows Defender Integration** — Checks antivirus/real-time protection status, signature age, and allows quick scans
-- **ClamAV Integration** (Optional) — Second antivirus engine with database updates and on-demand scanning
-- **Real-time Monitoring** — CPU/RAM/Disk/Network usage with graphs, plus a task-manager-style process list with CPU%/RAM per process
-- **Report Generation** — Click "Generate report" to get a complete scan summary that you can print, save as PDF, or download as .txt
-- **Event Log Analysis** — Reads recent Event Log entries (System/Application errors, Security log failed logons, admin group changes, account lockouts)
-- **Prioritized Recommendations** — Every finding includes a priority level (critical/high/medium/low) and specific remediation suggestions
-- **Desktop Application** — Runs as a standalone desktop app without requiring a browser
+```
+1. Download and unzip the release
+2. Double-click  start.bat
+3. First run: venv is created and dependencies installed automatically
+4. Click Run — the dashboard opens at http://localhost:5000
+```
 
-## Installation
+> For complete results right-click `start.bat` → **Run as administrator**
 
-### Option 1: Desktop App (One-Click)
-1. Double-click **`start_desktop.bat`**
-2. The app will automatically check dependencies and open the Zenith desktop window
+---
 
-### Option 2: Launcher
-1. Run **`start.bat`** or **`launcher.py`**
-2. Click **Run Desktop App** to open the application window
-3. (If you prefer browser mode, click **Browser**)
+## ClamAV (optional but recommended)
 
-### Option 3: Build .EXE File
-1. Double-click **`build_exe.bat`**
-2. The output will be created at `dist\Hskich\Hskich.exe` — a ready-to-use executable
+Zenith Local integrates with [ClamAV](https://www.clamav.net/download) as a second engine alongside Windows Defender.
 
+1. Download the Windows `.msi` from [clamav.net/download](https://www.clamav.net/download)
+2. Install to `C:\Program Files\ClamAV`
+3. Dashboard → **Malware / AV** → **Update Database**
+4. Choose a scan profile and start
 
+---
 
+## Build a standalone EXE
 
-<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-35-51" src="https://github.com/user-attachments/assets/1c018251-491a-43fc-a56e-f41d1cca65cb" />
+```bat
+build_exe.bat
+```
 
-<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-35-56" src="https://github.com/user-attachments/assets/6404e6c9-dc79-4937-9ce9-a97f9f3ab26e" />
+Bundles Python + all dependencies into `dist\ZenithLocal.exe` using PyInstaller.
+Copy `templates\`, `static\`, and `scanner\` folders alongside the EXE.
 
-<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-35-58" src="https://github.com/user-attachments/assets/4cfe2021-bdae-43f1-be80-e0fa00a566dd" />
+---
 
-<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-00" src="https://github.com/user-attachments/assets/64ee2b5f-7bb5-4838-9500-c25ca99a7334" />
+## Project structure
 
-<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-01" src="https://github.com/user-attachments/assets/8d235e36-4fc5-4ecc-b551-fa8dcd2b7d16" />
+```
+zenith-local/
+├── app.py                  # Flask server — all API routes
+├── launcher.py             # tkinter GUI launcher
+├── desktop.py              # PyWebView native window (optional)
+├── start.bat               # One-click web launcher
+├── start_desktop.bat       # One-click native window launcher
+├── build_exe.bat           # PyInstaller EXE builder
+├── requirements.txt
+├── scanner/
+│   ├── clamav_scan.py      # ClamAV engine integration
+│   ├── clamav_profiles.py  # Quick / Standard / Full profiles
+│   ├── defender_scan.py    # Windows Defender
+│   ├── driver_scan.py      # Driver list + Hardware IDs
+│   ├── event_logs.py       # Windows Event Log
+│   ├── file_scanner.py     # Suspicious file detection
+│   ├── file_watch.py       # Real-time folder watch (watchdog)
+│   ├── hardware_scan.py    # S.M.A.R.T., RAM, GPU, stress test
+│   ├── hash_scan.py        # Process hashes + MalwareBazaar
+│   ├── monitor.py          # Live system metrics
+│   ├── monitor_alerts.py   # Threshold alerts
+│   ├── network_scan.py     # Ports + firewall
+│   ├── network_advanced.py # Connections + per-process I/O
+│   ├── registry_scan.py    # Autorun scanner
+│   ├── risk_engine.py      # Finding schema + aggregation
+│   └── system_scan.py      # UAC, RDP, SMBv1, updates
+├── templates/
+│   └── index.html
+└── static/
+    ├── style.css
+    ├── script.js
+    └── logo.svg
+```
 
-<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-03" src="https://github.com/user-attachments/assets/5836d9b6-fcc4-4a23-b1f5-498ab66a3a3e" />
+---
 
-<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-14" src="https://github.com/user-attachments/assets/34f2c83b-b425-482a-bfa0-07346a8a6567" />
+## Tech stack
 
-<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-25" src="https://github.com/user-attachments/assets/f51400db-3f70-484f-ab45-dba214def347" />
+| Layer | Technology |
+|---|---|
+| Backend | Python 3.10+, Flask |
+| System access | psutil, PowerShell / WMI |
+| File watch | watchdog |
+| Malware scanning | ClamAV, Windows Defender |
+| Frontend | Vanilla JS, Canvas API, IBM Plex fonts |
+| Native window | PyWebView / Edge WebView2 (optional) |
 
-<img width="1897" height="786" alt="Screenshot From 2026-09-30 15-36-33" src="https://github.com/user-attachments/assets/2c98a23f-a81e-4202-84eb-6a11964f3bef" />
+---
 
+## Security & privacy
 
+- **100% local.** Nothing is sent anywhere.
+- Binds to `127.0.0.1` only — not reachable from the network.
+- MalwareBazaar lookup is opt-in — requires your own API key.
 
+---
 
+## License
 
+MIT — free to use, modify, and distribute.
+
+---
+
+## Contributing
+
+Pull requests and issues are welcome.
