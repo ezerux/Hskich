@@ -2,6 +2,9 @@
 
 > A self-hosted, offline Windows security dashboard — no cloud, no telemetry, everything runs on your machine.
 
+<img width="1410" height="821" alt="Screenshot 2026-10-01 154349" src="https://github.com/user-attachments/assets/bbe31490-238b-4950-9fb2-75dcc8bde620" />
+
+
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
