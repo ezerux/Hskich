@@ -1,5 +1,5 @@
 # Zenith Local
-
+<img width="400" height="400" alt="svgviewer-png-output (2)" src="https://github.com/user-attachments/assets/4060418a-c037-4e84-bfcc-d6cb3b220bcd" />
 > A self-hosted, offline Windows security dashboard — no cloud, no telemetry, everything runs on your machine.
 
 
@@ -10,9 +10,6 @@
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 
 ---
-<img width="400" height="400" alt="svgviewer-png-output (2)" src="https://github.com/user-attachments/assets/4060418a-c037-4e84-bfcc-d6cb3b220bcd" />
-
-
 
 <img width="1410" height="821" alt="Screenshot 2026-10-01 154349" src="https://github.com/user-attachments/assets/bbe31490-238b-4950-9fb2-75dcc8bde620" />
 
