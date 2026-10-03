@@ -1,4 +1,4 @@
-# Zenith Local
+# Zenith Local - Offline Windows Security Dashboard 
 <img width="400" height="400" alt="svgviewer-png-output (2)" src="https://github.com/user-attachments/assets/4060418a-c037-4e84-bfcc-d6cb3b220bcd" />
 
 > A self-hosted, offline Windows security dashboard — no cloud, no telemetry, everything runs on your machine.
